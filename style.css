@@ -85,6 +85,10 @@ h1 {
     list-style: none;       
 }
 
+#list::-webkit-scrollbar {
+    display: none;
+}
+
 .section-list h3 {
     color: var(--white);
     margin: 40px 0px 10px 0;    
@@ -105,6 +109,8 @@ h1 {
 .section-list li:hover{
     transform: rotate(0.8deg);
 }
+
+
 
 
 .section-list li button{
