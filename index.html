@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>TodoList</h1>
+    
+
+        <div class="add-task-div" aria-label="Agregar nueva tarea">
+            <input type="text" name="task" id="input-task" placeholder="Ingrese nombre de la tarea" aria-label="Nombre de la tarea">
+            <button type="button" id="add-button" class="add-button">Agregar</button>
+        </div>
+    
+
+        <section class="section-list">
+            <h3>POR HACER</h3>
+            <ul id="list" aria-label="Lista de tareas por hacer">
+                
+                <!-- <li>
+                    <input type="checkbox" class="check" data="Realizado" id="0" aria-label="Marcar tarea como completada">
+                    <p class="text ">Nombre de la tarea</p>
+                    <button type="button" class="delete-button" data-id="id">Eliminar</button>
+                </li> -->
+            </ul>
+        </section>
+    </main>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
