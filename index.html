@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DIOMEDES MORA</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header id="nav-placeholder">
+
+    </header>
+
     <main class="container">
         <h1>TodoList</h1>
     
@@ -26,11 +30,19 @@
                     <p class="text ">Nombre de la tarea</p>
                     <button type="button" class="delete-button" data-id="id">Eliminar</button>
                 </li> -->
+
             </ul>
         </section>
     </main>
     
 
     <script src="app.js"></script>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
 </body>
 </html>

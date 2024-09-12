@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="nav-placeholder">
+
+    </header>
+
+    <main class="container">
+        <header class="main-header">
+            <h1>TO-DO LIST</h1>
+        </header>
+
+        <section class="add-task">
+            <input type="text" id="input-task" placeholder="Ingresa tu tarea" aria-label="Nueva tarea">
+            <button type="button" onclick="addTask()">Agregar</button>
+        </section>
+    
+        <section class="tasks-to-do">
+            <ul id="list-container">
+                <li class="check-task">
+                    <!-- <input type="checkbox">
+                    <p class="checked">CLAUDIO</p>
+                    <i class="fa-solid fa-x"></i> -->
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    <script src="app2.js"></script>
+    <script>
+        // Carga el contenido del nav.html
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
